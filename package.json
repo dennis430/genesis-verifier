@@ -1,0 +1,48 @@
+{
+  "name": "@dws/genesis-verifier",
+  "version": "0.1.1",
+  "private": false,
+  "license": "Apache-2.0",
+  "author": "Dennis Liu",
+  "type": "module",
+  "description": "Independently reproducible verification for evidence-backed machine assertions.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennis430/genesis-verifier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dennis430/genesis-verifier/issues"
+  },
+  "homepage": "https://github.com/dennis430/genesis-verifier#readme",
+  "keywords": [
+    "verification",
+    "evidence",
+    "receipts",
+    "pdf",
+    "csv"
+  ],
+  "bin": {
+    "genesis-verify": "./src/cli.mjs"
+  },
+  "files": [
+    "LICENSE",
+    "index.mjs",
+    "src",
+    "INTEGRATION.md",
+    "SPEC.md",
+    "README.md",
+    "sample"
+  ],
+  "exports": {
+    ".": "./index.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test test/verify.test.mjs test/phase2.test.mjs test/csv.test.mjs test/csv-v2.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
