@@ -1,0 +1,27 @@
+{
+  "receiptVersion": "genesis.receipt.v1",
+  "rule": {
+    "id": "inference.v1",
+    "version": "1"
+  },
+  "evidence": {
+    "sha256": "7fddb00a7a28ddcffd137f97a6a7f7a54f1f5f5e199a32ed9f2d2aa7342685b0"
+  },
+  "source": {
+    "kind": "counterparty_supplied"
+  },
+  "claimStanding": "inferred",
+  "claim": {
+    "text": "Total invoiced amount: $18,450.00"
+  },
+  "derivation": {
+    "type": "inference",
+    "note": "these look like the invoices"
+  },
+  "limitations": [
+    "GENUINENESS_NOT_ESTABLISHED",
+    "SOURCE_KIND_IS_DECLARED_NOT_PROVEN",
+    "SUBJECT_CONTROL_NOT_ESTABLISHED",
+    "CLAIM_TEXT_IS_NOT_INTERPRETED_BEYOND_EXACT_MATCH"
+  ]
+}

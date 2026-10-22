@@ -1,0 +1,62 @@
+{
+  "receiptVersion": "genesis.receipt.v1",
+  "rule": {
+    "id": "sum.exact",
+    "version": "1"
+  },
+  "evidence": {
+    "sha256": "055de44908ad24e90ea21049ec278f87e669e722e14246751efb1c77e61affa0",
+    "mediaType": "application/pdf"
+  },
+  "extraction": {
+    "profile": "genesis.pdf-text.v1",
+    "extractedSha256": "6a5da2bbc6db03ae0724fd40d6182b7e6570827152a8259bc8201c8d2bedb7bb"
+  },
+  "source": {
+    "kind": "counterparty_supplied"
+  },
+  "claimStanding": "derived",
+  "claim": {
+    "text": "Total invoiced amount: $18,450.00"
+  },
+  "derivation": {
+    "type": "sum",
+    "operands": [
+      {
+        "label": "Invoice 001",
+        "expectedText": "$6,200.00",
+        "span": {
+          "start": 12,
+          "end": 21,
+          "page": 1
+        }
+      },
+      {
+        "label": "Invoice 002",
+        "expectedText": "$7,750.00",
+        "span": {
+          "start": 34,
+          "end": 43,
+          "page": 1
+        }
+      },
+      {
+        "label": "Invoice 003",
+        "expectedText": "$4,500.00",
+        "span": {
+          "start": 56,
+          "end": 65,
+          "page": 1
+        }
+      }
+    ],
+    "expectedTotal": "$18,450.00"
+  },
+  "limitations": [
+    "GENUINENESS_NOT_ESTABLISHED",
+    "SOURCE_KIND_IS_DECLARED_NOT_PROVEN",
+    "SUBJECT_CONTROL_NOT_ESTABLISHED",
+    "CLAIM_TEXT_IS_NOT_INTERPRETED_BEYOND_EXACT_MATCH",
+    "SPANS_ADDRESS_EXTRACTED_TEXT_NOT_PDF_BYTES"
+  ]
+}
