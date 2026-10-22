@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Genesis">
+  <rect width="512" height="512" rx="96" fill="#0B1020"/>
+  <rect x="132" y="132" width="84" height="28" fill="#8FB4FF"/>
+  <rect x="132" y="132" width="28" height="84" fill="#8FB4FF"/>
+  <rect x="296" y="132" width="84" height="28" fill="#8FB4FF"/>
+  <rect x="352" y="132" width="28" height="84" fill="#8FB4FF"/>
+  <rect x="132" y="352" width="84" height="28" fill="#8FB4FF"/>
+  <rect x="132" y="296" width="28" height="84" fill="#8FB4FF"/>
+  <rect x="296" y="352" width="84" height="28" fill="#8FB4FF"/>
+  <rect x="352" y="296" width="28" height="84" fill="#8FB4FF"/>
+  <rect x="168" y="242" width="176" height="28" fill="#F4F8FF"/>
+</svg>
