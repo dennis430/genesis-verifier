@@ -16,6 +16,16 @@ npm install https://github.com/dennis430/genesis-verifier/releases/download/gene
 
 The package name is `@dws/genesis-verifier`. That name is not on the npm registry yet.
 
+From a checkout, the CLI reads a file and a receipt. It does not install a registry package:
+
+```bash
+node src/cli.mjs examples/invoices.txt examples/receipts/sum-pass.json
+node src/cli.mjs examples/invoices-tampered.txt examples/receipts/sum-pass.json
+node src/cli.mjs examples/invoices.txt examples/receipts/bad-arithmetic.json
+```
+
+Those three commands exit 0, 1, and 1. The first reproduces the sum. The second fails the file hash. The third reproduces a different total than the receipt states. A pass still does not authorize a payment.
+
 ```js
 import { verify } from '@dws/genesis-verifier'
 ```
@@ -78,6 +88,13 @@ The original-file hash and the extract hash are separate. A match on one does no
 ## Limitations
 
 PDF text that depends on a custom encoding or a scan is `UNVERIFIABLE`, not approximated. CSV profiles split on commas only. They do not detect a header. v1 does not read a typical spreadsheet export that uses CRLF or a BOM; use v2 for that export. v2 still will not repair uneven rows.
+
+## Where this sits
+
+Genesis checks one file against one receipt. It does not trace whether two observations are the same origin, and it does not store model answers.
+
+- [source-dependence](https://github.com/dennis430/source-dependence) keeps the claim, the observations, and the documented relationships. A shared origin is not a second observation.
+- [model-evidence-archive](https://github.com/dennis430/model-evidence-archive) is the frozen probe panel and the collector. It does not yet contain authentic model responses.
 
 ## License and contributions
 

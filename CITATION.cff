@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "@dws/genesis-verifier"
+message: If you use this software, cite the version you ran. A citation is not a claim that a receipt PASS established authenticity or authorization.
+type: software
+authors:
+  - family-names: Liu
+    given-names: Dennis
+repository-code: https://github.com/dennis430/genesis-verifier
+license: Apache-2.0
+version: 0.1.1
+date-released: 2026-10-22
+keywords:
+  - verification
+  - evidence
+  - receipts
