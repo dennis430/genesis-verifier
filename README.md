@@ -4,6 +4,8 @@
 
 # Genesis
 
+Development moved to [checkable](https://github.com/dennis430/checkable). This repository stays as the Apache-2.0 package and the v0.1.1 release. New examples, the quotation helper, and the other two packages are edited there.
+
 Reproducible verification for evidence-backed machine assertions.
 
 Genesis checks a receipt against the file it cites. It uses Node's `crypto` and `zlib`. It does not call a model or a server. Node 20 or newer. Licensed under Apache-2.0.
